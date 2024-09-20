@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Header Parser Microservice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Request Header Parser Microservice</h1>
+        <p class="subtitle">Retrieve your IP address, language, and software information from the request headers</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>How It Works</h2>
+            <p>This microservice extracts essential information from the request headers and returns it in a JSON format. The data includes your IP address, preferred language, and software (User-Agent) information.</p>
+            <p>Simply make a GET request to the specified API endpoint to receive these details in the response.</p>
+        </section>
+
+        <section class="examples">
+            <h2>Example Usage:</h2>
+            <ul>
+                <li><a href="/api/whoami">[project url]/api/whoami</a></li>
+            </ul>
+            <h2>Example Output:</h2>
+            <p><code>{"ipaddress": "159.20.14.100", "language": "en-US,en;q=0.5", "software": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code></p>
+        </section>
+
+        <section class="note">
+            <h3>Note:</h3>
+            <p>This microservice is designed for demonstration purposes, showing how to retrieve and process request headers in an API context.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>This project provides a simple API for parsing request headers.</p>
+        <p><strong>Important:</strong> This is purely for demonstration and testing purposes on the API level.</p>
+    </footer>
+</body>
+</html>
